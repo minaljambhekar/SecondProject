@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="resources/css/bootstrap.min.css" />
+<script src="resources/js/bootstrap.min.js"></script>
+
+</head>
+
+<body ng-app="myApp">
+	<div class="generic-container" ng-controller="BlogController as ctrl">
+	<br/><br/><br/>
+	<h3>Blogs</h3>
+	<table class="table table-striped" style="width: 100%">
+	<tr style="font-weight: bold;">
+	<label>{{selectedBlogtitle}}</label> 
+	<br>
+	posted by: <label>{{selectedBlog.user.username}}</label>
+	on <label>{{selectedBlog.dateTime}}</label>
+	<label>{{selectedBlog.description}}</label>
+</div>
+</div>
